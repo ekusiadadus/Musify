@@ -23,6 +23,12 @@ header .logo {
     object-fit: cover;
 }
 
+header .logo-text {
+    margin-left: 5px;
+    font-size:18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 header .navbar-nav {
     margin-left: 30px;
 }
