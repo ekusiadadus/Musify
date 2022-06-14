@@ -1,0 +1,44 @@
+:root {
+    --bg-color: #191414;
+}
+
+.bg-accent {
+    background-color: #51C0A5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff!important;
+}
+
+header .logo {
+    object-fit: cover;
+}
+
+header .navbar-nav {
+    margin-left: 30px;
+}
+
+main .app-logo {
+    text-align: center;
+    margin: 13vh auto 5vh auto;
+}
+
+main .app-logo img {
+    width: 20vw;
+    max-width: 300px;
+}
+
+main .app-info {
+    text-align: center;
+}
+
+main .app-info * {
+    color: #ffffff;
+}
