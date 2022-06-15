@@ -1,13 +1,16 @@
 const apiUrl = "https://raw.githubusercontent.com/gokadzev/Musify/update/check.json"
 let versionElement = document.getElementById("version");
-let downloadElement = document.getElementById("download");
+let downloadElements = document.querySelectorAll("#download");
 
 
 window.onload = function() {
     getUpdateInfo((res) => {
         const response = JSON.parse(res);
-        versionElement.textContent += response["version"];
-        downloadElement.setAttribute("href", response["url"]);
+        versionElement.textContent += "Current Version: " + response["version"];
+        downloadElements.forEach((element) => {
+            element.setAttribute("href", response["url"]);
+        })
+        
     })
 };
 
